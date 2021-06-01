@@ -219,3 +219,133 @@
 // }else if(fgh != n**2){
 //     console.log('трикутник не прямокутний')
 // }
+
+// const age = +prompt("Рік народження");
+// console.log(age % 12)
+// switch(age % 12){
+//     case 4:console.log('Щур ');break;
+//     case 5:console.log('Бик ');break;
+//     case 6:console.log('Тигр');break;
+//     case 7:console.log('Заяць ');break;
+//     case 8:console.log('Дракон');break;
+//     case 9:console.log('Змія');break;
+//     case 10:console.log('Кінь');break;
+//     case 11:console.log('Вівця ');break;
+//     case 0:console.log('Мавпа');break;
+//     case 1:console.log('Півень');break;
+//     case 2:console.log('Собака');break;
+//     case 3:console.log('Кабан ');break;
+//     default: console.log('Error');
+// }
+
+const a = +prompt("Рік");
+// const b = +prompt("місяць");
+// const c = +prompt("дата");
+
+switch(a % 4){
+    case 0:console.log('Високосний'){
+        switch(b){
+            case 1: if(c++ == 32){
+                c = 1    
+            }if(c == 1){
+                b=b++
+            }if else(b == 13){
+                a=a++
+                b=1
+            }
+            case 2: if(c++ == 30){
+                c = 1
+            }if(c == 1){
+                b=b++
+            }if else(b == 13){
+                a=a++
+                b=1
+            }
+            case 3: if(c++ == 31){
+                c = 1
+            }if(c == 1){
+                b=b++
+            }if else(b == 13){
+                a=a++
+                b=1
+            }
+            case 4: if(c++ == 31){
+                c = 1
+            }if(c == 1){
+                b=b++
+            }if else(b == 13){
+                a=a++
+                b=1
+            }
+            case 5: if(c++ == 32){
+                c = 1
+            }if(c == 1){
+                b=b++
+            }if else(b == 13){
+                a=a++
+                b=1
+            }
+            case 6: if(c++ == 31){
+                c = 1
+            }if(c == 1){
+                b=b++
+            }if else(b == 13){
+                a=a++
+                b=1
+            }
+            case 7: if(c++ == 32){
+                c = 1
+            }if(c == 1){
+                b=b++
+            }if else(b == 13){
+                a=a++
+                b=1
+            }
+            case 8: if(c++ == 32){
+                c = 1
+            }if(c == 1){
+                b=b++
+            }if else(b == 13){
+                a=a++
+                b=1
+            }
+            case 9: if(c++ == 31){
+                c = 1
+            }if(c == 1){
+                b=b++
+            }if else(b == 13){
+                a=a++
+                b=1
+            }
+            case 10: if(c++ == 32){
+                c = 1
+            }if(c == 1){
+                b=b++
+            }if else(b == 13){
+                a=a++
+                b=1
+            }
+            case 11: if(c++ == 31){
+                c = 1
+            }if(c == 1){
+                b=b++
+            }if else(b == 13){
+                a=a++
+                b=1
+            }
+            case 12: if(c++ == 32){
+                c = 1
+            }if(c == 1){
+                b=b++
+            }if else(b == 13){
+                a=a++
+                b=1
+            }
+        }
+    }
+    break;
+    case 1:console.log('не високосний ');break;
+    case 2:console.log('не високосний');break;
+    case 3:console.log('не високосний ');break;
+    default: console.log('Error');
+}
