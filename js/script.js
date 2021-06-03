@@ -238,114 +238,96 @@
 //     default: console.log('Error');
 // }
 
-const a = +prompt("Рік");
-// const b = +prompt("місяць");
-// const c = +prompt("дата");
+// while(){
 
-switch(a % 4){
-    case 0:console.log('Високосний'){
-        switch(b){
-            case 1: if(c++ == 32){
-                c = 1    
-            }if(c == 1){
-                b=b++
-            }if else(b == 13){
-                a=a++
-                b=1
-            }
-            case 2: if(c++ == 30){
-                c = 1
-            }if(c == 1){
-                b=b++
-            }if else(b == 13){
-                a=a++
-                b=1
-            }
-            case 3: if(c++ == 31){
-                c = 1
-            }if(c == 1){
-                b=b++
-            }if else(b == 13){
-                a=a++
-                b=1
-            }
-            case 4: if(c++ == 31){
-                c = 1
-            }if(c == 1){
-                b=b++
-            }if else(b == 13){
-                a=a++
-                b=1
-            }
-            case 5: if(c++ == 32){
-                c = 1
-            }if(c == 1){
-                b=b++
-            }if else(b == 13){
-                a=a++
-                b=1
-            }
-            case 6: if(c++ == 31){
-                c = 1
-            }if(c == 1){
-                b=b++
-            }if else(b == 13){
-                a=a++
-                b=1
-            }
-            case 7: if(c++ == 32){
-                c = 1
-            }if(c == 1){
-                b=b++
-            }if else(b == 13){
-                a=a++
-                b=1
-            }
-            case 8: if(c++ == 32){
-                c = 1
-            }if(c == 1){
-                b=b++
-            }if else(b == 13){
-                a=a++
-                b=1
-            }
-            case 9: if(c++ == 31){
-                c = 1
-            }if(c == 1){
-                b=b++
-            }if else(b == 13){
-                a=a++
-                b=1
-            }
-            case 10: if(c++ == 32){
-                c = 1
-            }if(c == 1){
-                b=b++
-            }if else(b == 13){
-                a=a++
-                b=1
-            }
-            case 11: if(c++ == 31){
-                c = 1
-            }if(c == 1){
-                b=b++
-            }if else(b == 13){
-                a=a++
-                b=1
-            }
-            case 12: if(c++ == 32){
-                c = 1
-            }if(c == 1){
-                b=b++
-            }if else(b == 13){
-                a=a++
-                b=1
-            }
-        }
+// }
+
+
+
+
+
+// for(let i = 0; i < 10; i++){
+//     document.write(`<p> ${i}.Hello!!!<p>`)
+// }
+
+// for(let i = 5; i > 0; i--){
+//     alert(i)
+// }
+
+// document.body.style.background = 'url(https://lh3.googleusercontent.com/proxy/5qLASS4aUQPcR4kzeveAKhY30nUj0SHJoIX5wYeckXVRaacrTpnBxXoCP3un83lmeUxsvWAlsqX-XeGPCSfGqMq4NBpmrVLZdnpUV8fK3sRYekgbN9RPVWytZTUaVL70f7x5FQ437uy7EUNqtxeLeg) no-repeat'; 
+
+
+// let b = +prompt('number')
+
+// for(let i = 1; i <= 10; i++){
+//     document.write(`${i} <br>`)
+// }
+
+// let q,w,e;
+// plas = 0;
+// min = 0;
+// nul = 0;
+
+// let b = +prompt('введіть скільки цифер')
+// for(let i = 0; i < b; i++){
+//     let q = +prompt('введіть цифри');
+//     if( q == 0 ){
+//         nul++
+//     }else if( q > 0 ){
+//         plas++
+//     }else if(q < 0){
+//         min++ 
+//     }  
+    
+// }
+
+// console.log(plas);
+// console.log(min);
+// console.log(nul);
+
+
+
+// for(let i = 0; i < 5; i++){
+//     let b = +prompt('введіть цифри');
+//     let c = +prompt('введіть цифри');
+//     if(b > c){
+//         console.log(b)
+//     }else if(b < c){
+//         console.log(c)
+//     }else if(b == c){
+//         console.log(`${b} = ${c}`)
+//     }
+// }
+
+
+
+// for(let i = 35; i < 88; i++){
+//     if(i % 7 == 1 || i % 7 == 2 || i % 7 == 5){
+//         console.log(i)
+//     }
+
+// }
+
+
+// let c = 1;
+// let b = +prompt('введіть factorial');
+// for(let i = 1; i < b; ){
+//     c = c*++i;
+//     console.log(c)
+// }
+
+
+let l = 0
+let r = 0
+let b = +prompt('введіть 5 значне число');
+let c = 0;
+for(; b != 0;){
+    let v = b % 10
+    if(v % 2 == 0){
+        l += v
+    }else if(v % 2 != 0){
+        r += v
     }
-    break;
-    case 1:console.log('не високосний ');break;
-    case 2:console.log('не високосний');break;
-    case 3:console.log('не високосний ');break;
-    default: console.log('Error');
+    b = parseInt(b/10)
+    console.log(l + r)
 }
