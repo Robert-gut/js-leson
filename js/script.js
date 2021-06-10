@@ -317,17 +317,74 @@
 // }
 
 
-let l = 0
-let r = 0
-let b = +prompt('введіть 5 значне число');
-let c = 0;
-for(; b != 0;){
-    let v = b % 10
-    if(v % 2 == 0){
-        l += v
-    }else if(v % 2 != 0){
-        r += v
+// let l = 0
+// let r = 0
+// let b = +prompt('введіть 5 значне число');
+// let c = 0;
+// for(; b != 0;){
+//     let v = b % 10
+//     if(v % 2 == 0){
+//         l += v
+//     }else if(v % 2 != 0){
+//         r += v
+//     }
+//     b = parseInt(b/10)
+//     console.log(l + r)
+// }
+
+
+
+// const arr = []
+// for (let i = 0; i < 6; i++) {
+//     arr[i]= +prompt('numbers');   
+// }
+// console.log(arr)
+
+// document.write(`<ol>`)  
+// for (let i = 0; i < arr.length; i++) {
+//     document.write(`<li> ${arr[i]}</li>`)   
+// }
+// document.write(`</ol>`)  
+
+// let a = [[1, 2],[14, 42],[12, 99]]
+
+// for (let i = 0; i < a.length; i++) {
+//     document.write(`<p> ${a[i][0]} and ${a[i][1]}</p>`)
+    
+// }
+// console.log(a.flat)
+
+
+// const m = ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', ]
+// const c = ['Black', 'White', 'Brown', 'Red', 'Grey', 'Blue', 'Green', 'Pink', 'Purple', 'Yellow', 'Orange', 'Beige', ]
+
+// for (let i = 0; i < m.length; i++) {
+//     document.write(`<p style="color: ${c[i]}"> ${m[i]}</p>`)
+   
+// }
+
+
+
+const m = ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', ]
+
+let a = m[parseInt(Math.random()*10)];
+console.log(a)
+
+let v = ["*" ,"*" , "*", "*", "*", "*", "*", "*"]
+
+while(true){
+    alert(v)
+    let b = prompt('1 символ')
+    if(b.length == 1){
+        for (let i = 0; i < a.length; i++) {
+            if(b == a[i].toLowerCase()){
+                console.log(`Правельна буква ${i}`)
+                v[i] = b
+              
+            }
+        }
+    
+    }else{
+        console.log('тільки 1 букву')
     }
-    b = parseInt(b/10)
-    console.log(l + r)
 }
