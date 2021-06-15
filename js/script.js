@@ -363,28 +363,211 @@
    
 // }
 
+/////////////ddddddddddddzzzzzzzzzzzzzzzzzz
 
+// const m = ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', ]
 
-const m = ['Січень', 'Лютий', 'Березень', 'Квітень', 'Травень', 'Червень', 'Червень', 'Липень', 'Серпень', 'Вересень', 'Жовтень', 'Листопад', ]
+// let a = m[parseInt(Math.random()*10)];
+// console.log(a)
 
-let a = m[parseInt(Math.random()*10)];
-console.log(a)
+// let v = ["*" ,"*" , "*", "*", "*", "*", "*", "*"]
 
-let v = ["*" ,"*" , "*", "*", "*", "*", "*", "*"]
-
-while(true){
-    alert(v)
-    let b = prompt('1 символ')
-    if(b.length == 1){
-        for (let i = 0; i < a.length; i++) {
-            if(b == a[i].toLowerCase()){
-                console.log(`Правельна буква ${i}`)
-                v[i] = b
+// while(true){
+//     alert(v)
+//     let b = prompt('1 символ')
+//     if(b.length == 1){
+//         for (let i = 0; i < a.length; i++) {
+//             if(b == a[i].toLowerCase()){
+//                 console.log(`Правельна буква ${i}`)
+//                 v[i] = b
               
-            }
-        }
+//             }
+//         }
     
-    }else{
-        console.log('тільки 1 букву')
-    }
+//     }else{
+//         console.log('тільки 1 букву')
+//     }
+//
+
+
+
+
+
+// let arr = [1,2,3,4,5,6];
+
+// console.log(arr); 
+// console.log(arr.sort()); 
+
+
+
+
+
+// console.log(arr.reverse()); 
+
+
+
+
+
+// console.log(arr.indexOf(2)); 
+// console.log(arr.lastIndexOf(2)); 
+
+// arr.push(7);
+// console.log(arr);
+// arr.unshift(0);
+// console.log(arr);
+// arr.shift();
+// console.log(arr);
+// arr.pop();
+// console.log(arr);
+// console.log(arr.join(''));
+// let date = '20.20.2021'
+// console.log(date.split('.'))
+
+// let arr2 = arr.slice(1,4);
+// console.log(arr2)
+
+// let arr3 = arr.splice(1,1,99,88);
+// console.log(arr3)
+// console.log(arr)
+
+
+
+// function showMessage(){
+//     console.log('hello world')
+// };
+
+// showMessage();
+
+
+// let showcolor = function(str){
+//     console.log(str)
+// };
+
+// showcolor('red');
+
+// let sum = function(a, b){
+//     return a + b;
+// }
+
+// console.log(sum(1,2))
+
+
+
+// let countDigit = function(number){
+//     let counter = 0;
+//     while(number != 0){
+//         number = parseInt(number / 10);
+//         counter++;
+//     }
+//     return counter;
+// }
+// let number = +prompt('Input numbe: ');
+// let length = countDigit(number);
+// console.log(length)
+
+
+
+
+//////////////////////1111111111
+// let numbers = function (a ,b){
+//     let c = 0
+//     if(a > b){
+//         c = b
+//     }if(a < b){
+//         c = a
+//     }
+//     return c;
+// }
+// let a = +prompt('a =');
+// let b = +prompt('b =');
+// console.log(numbers(a ,b))
+
+///////////////////22222222222
+// let numbers = function (a ,b){
+    
+//     return a**b;
+// }
+// let a = +prompt('num =');
+// let b = +prompt('step =');
+// console.log(numbers(a ,b))
+
+///////////////////33333333333
+// let numbers = function (a,b,c){
+//     let q = 0
+//     if(c == '+'){
+//         q = a + b
+//     }if(c == '-'){
+//         q = a - b
+//     }if(c == '*'){
+//         q = a * b
+//     }if(c == '/'){
+//         q = a / b
+//     }
+//     return q;
+// }
+// let a = +prompt('a =');
+// let b = +prompt('b =');
+// let c = prompt('+-*/');
+// console.log(numbers(a,b,c))
+
+//////////////4444
+
+// let prime = function (number){
+//    for(let i = 2; i < number; i++){
+//     if(number % i == 0) return false;{
+//         return true
+//     }
+
+// }
+// let a = +prompt('a =');
+// console.log(numbers(a))
+
+
+/////////////////////5555555555555
+
+// let numbers = function (a){
+
+//     for (i = 0; i < 9; i++) {
+//         console.log(a * i)
+//     };
+// }
+// let a = +prompt('a =');
+// console.log(numbers(a))
+
+///////////////////////66666666666666
+
+// let numbers = function (a,b){
+   
+//     return a - parseInt(a / b) *  b;
+// }
+// let a = +prompt('a /');
+// let b = +prompt('b');
+
+// console.log(numbers(a,b,))
+
+/////////////////////7777777777777
+
+let numbers = function (a,b,c,d,e){
+   
+    return a+b+c+d+c;
 }
+let a = +prompt('a');
+let b = +prompt('b');
+let c = +prompt('c');
+let d = +prompt('d');
+let e = +prompt('e');
+console.log(numbers(a,b,c,d,e))
+
+
+
+////////////////8888888888888
+let numbers = function (a,b,c,d,e){
+   if(a > )
+    return a+b+c+d+c;
+}
+let a = +prompt('a');
+let b = +prompt('b');
+let c = +prompt('c');
+let d = +prompt('d');
+let e = +prompt('e');
+console.log(numbers(a,b,c,d,e))
