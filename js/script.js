@@ -547,27 +547,138 @@
 
 /////////////////////7777777777777
 
-let numbers = function (a,b,c,d,e){
+// let numbers = function (a,b,c,d,e){
    
-    return a+b+c+d+c;
+//     return a+b+c+d+c;
+// }
+// let a = +prompt('a');
+// let b = +prompt('b');
+// let c = +prompt('c');
+// let d = +prompt('d');
+// let e = +prompt('e');
+// console.log(numbers(a,b,c,d,e))
+
+
+
+// ////////////////8888888888888
+// let numbers = function (a,b,c,d,e){
+//    if(a > )
+//     return a+b+c+d+c;
+// }
+// let a = +prompt('a');
+// let b = +prompt('b');
+// let c = +prompt('c');
+// let d = +prompt('d');
+// let e = +prompt('e');
+// console.log(numbers(a,b,c,d,e))
+
+
+
+// let aquare = (w,h) => h==undefined ? w**2 : w*h
+// console.log(aquare(2,4))
+
+// let checkLucky = (number) =>{
+//     let sum = 0;
+//     for(i = 0; i < number; i++){
+//         if(number % i == 0) sum+= i;
+//     }    
+//     return number == sum ? true : false;
+// }
+
+// let rangePerfect = (min,max) =>{
+//     let temp;
+//     if(min > max){
+//         temp = min;
+//         min = max;
+//         max = temp;
+//     }
+//     for (let i = min; i <= max; i++) {
+//         if(checkLucky(i)){console.log(i); temp = true};
+//     }
+//     if(!temp) console.log('perfect')
+// }
+
+// rangePerfect(1,100)
+
+
+// let time = (h = 0 ,m = 0,s = 0) => {
+//     h = h < 10 ? '0' +h : h; 
+//     m = m < 10 ? '0' +m : m; 
+//     s = s < 10 ? '0' +s : s; 
+//     document.write(`${h}:${m}:${s}`)
+//     return `${h}:${m}:${s}`;
+// }
+// console.log(time(10,6,7))
+
+
+// let getSeconds = (h,m,s) => h * 3600 + m * 60 + s;
+
+
+
+// let getTime = (s) => time(parseInt(s / 3600),parseInt((s%=3600) / 60),s%=60)
+
+
+
+// let getSudTime = (h1,m1,s1,h2,m2,s2) => {
+//     let sub = getSeconds(h1,m1,s1) - getSeconds(h2,m2,s2);
+//     return sub < 0 ? getTime(sub*-1) :  getTime(sub);
+// }
+
+
+
+
+
+
+
+// let cheackLeapYear = (year) => (year % 4 ==0 && year % 100 != 0 || year % 400 == 0) ? true : false; 
+
+
+// let getDaysForMouns = (mouth) => {
+//     switch(mouth){
+//         case 1: case 3: case 5: case 7: case 8: case 10: case 12:
+//             return 31; 
+//         case 4: case 6: case 9: case 11:
+//             return 30;
+//         case 2:
+//             return cheackLeapYear(year) ? 29 : 28;
+//     }
+// }
+
+
+// let date = (day = 0, mouth = 0,yaer = 0) => `${day < 10 ? '0' + day : day}.${mouth < 10 ? '0' + mouth : mouth}.${yaer}`;
+
+// let getNextDey = (day,month,yaer) => {
+//     day++;
+//     if(day > getDaysForMouns(month,yaer)){
+//         day = 1
+//         month++;
+//     }if(month > 12){
+//         month = 1;
+//         yaer++;   
+//     }
+//     return date(day,month,yaer)
+// }
+
+// console.log(getNextDey(31,12,2020))
+
+
+
+let arr = [2,3,5,8,4,545,5545,58,54,55,5548784,84,84,4,654,654,6584];
+
+let print = (mas) => {
+    for (let i = 0; i < mas.length; i++) {
+        if(mas[i] % 2 == 0)console.log(mas[i]);
+    }
 }
-let a = +prompt('a');
-let b = +prompt('b');
-let c = +prompt('c');
-let d = +prompt('d');
-let e = +prompt('e');
-console.log(numbers(a,b,c,d,e))
+// print(arr)
 
-
-
-////////////////8888888888888
-let numbers = function (a,b,c,d,e){
-   if(a > )
-    return a+b+c+d+c;
+let getMaxArray = (mas) => {
+    // let max = mas[];
+    for (let i = 1; i < mas.length; i++) {
+        if(max < mas[i]) max = mas[i];
+    }
+    return max;
 }
-let a = +prompt('a');
-let b = +prompt('b');
-let c = +prompt('c');
-let d = +prompt('d');
-let e = +prompt('e');
-console.log(numbers(a,b,c,d,e))
+
+// let res = Math.max(...arr);
+// let result = arr.filter( el => el%2 == 0 ? el : null)
