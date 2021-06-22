@@ -663,22 +663,121 @@
 
 
 
-let arr = [2,3,5,8,4,545,5545,58,54,55,5548784,84,84,4,654,654,6584];
+// let arr = [2,3,5,8,4,545,5545,58,54,55,5548784,84,84,4,654,654,6584];
 
-let print = (mas) => {
-    for (let i = 0; i < mas.length; i++) {
-        if(mas[i] % 2 == 0)console.log(mas[i]);
-    }
-}
-// print(arr)
+// let print = (mas) => {
+//     for (let i = 0; i < mas.length; i++) {
+//         if(mas[i] % 2 == 0)console.log(mas[i]);
+//     }
+// }
+// // print(arr)
 
-let getMaxArray = (mas) => {
-    // let max = mas[];
-    for (let i = 1; i < mas.length; i++) {
-        if(max < mas[i]) max = mas[i];
-    }
-    return max;
-}
+// let getMaxArray = (mas) => {
+//     // let max = mas[];
+//     for (let i = 1; i < mas.length; i++) {
+//         if(max < mas[i]) max = mas[i];
+//     }
+//     return max;
+// }
 
 // let res = Math.max(...arr);
 // let result = arr.filter( el => el%2 == 0 ? el : null)
+
+
+
+// let fact = (n) => {
+//     if(n == 1) return 1;
+//     return n * fact(n - 1);
+// }
+
+// console.log(fact(7))
+
+
+
+
+// let show = (n) => {
+//     document.write('(')
+//     if (n!=1) show(n-1);
+//     document.write(')')
+// }
+// show(2)
+
+
+// let show = (n) => {
+//     if(n < 10) return n;
+//     return n%10 + show(parseInt(n/10))
+// }
+
+// console.log(show(1357))
+
+
+
+
+
+// let $btn = document.querySelector('button');
+
+// $btn.onclick = () => {
+//     p.style.color = 'red';
+//     p.style.textAlign = 'center';
+// }
+
+
+// let p = document.querySelectorAll('#text');
+// let btn = document.querySelector('button');
+
+// let flag = false;
+// for (let i = 0; i < p.length; i++) {
+//     p[i].addEventListener('click',function(){
+//         if(this.style.color != 'red'){
+//             this.style.color = 'red';
+//             this.style.fontSize = '24px';
+//             this.textContent = 'Active'
+            
+//         }
+//         else{
+//             this.style.color = 'black';
+//             this.style.fontSize = '16px';
+//             this.textContent = 'Hello World'
+            
+//         }
+      
+//     })
+    
+// }
+
+
+
+
+let p = document.querySelector('p')
+
+let $btn1 = document.querySelector('#btn1');
+let $btn2 = document.querySelector('#btn2');
+let $btn3 = document.querySelector('#btn3');
+let $btn4 = document.querySelector('#btn4');
+
+$btn1.onclick = () => {
+    p.style.color = 'black';
+    p.style.width = '500px'
+    p.style.fontStyle = '18px'
+    p.style.margin = '50px auto'
+    p.style.backgroundColor = 'rgb(170, 170, 119)'
+    p.style.padding = '10px'
+    p.style.border = 'solid 3px  rgb(130, 126, 182)'
+    p.style.borderRadius = '3px'
+    p.style.fontStyle = 'italic'
+    p.style.fontWeight = '600'
+}
+
+$btn2.onclick = () => {
+    p.style.color = 'rgb(59, 6, 59)';
+    p.style.width = '650px'
+    p.style.fontStyle = '15px'
+    p.style.margin = '50px 20px  50px auto'
+    p.style.backgroundColor = 'rgb(194, 71, 194)'
+    p.style.padding = '10px'
+    p.style.border = 'dashed 8px  rgb(72, 15, 148)'
+    p.style.borderRadius = '3px'
+    p.style.fontStyle = 'italic'
+    p.style.fontWeight = '600'
+}
+
