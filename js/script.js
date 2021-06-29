@@ -748,36 +748,148 @@
 
 
 
-let p = document.querySelector('p')
+// let p = document.querySelector('p')
 
-let $btn1 = document.querySelector('#btn1');
-let $btn2 = document.querySelector('#btn2');
-let $btn3 = document.querySelector('#btn3');
-let $btn4 = document.querySelector('#btn4');
+// let $btn1 = document.querySelector('#btn1');
+// let $btn2 = document.querySelector('#btn2');
+// let $btn3 = document.querySelector('#btn3');
+// let $btn4 = document.querySelector('#btn4');
 
-$btn1.onclick = () => {
-    p.style.color = 'black';
-    p.style.width = '500px'
-    p.style.fontStyle = '18px'
-    p.style.margin = '50px auto'
-    p.style.backgroundColor = 'rgb(170, 170, 119)'
-    p.style.padding = '10px'
-    p.style.border = 'solid 3px  rgb(130, 126, 182)'
-    p.style.borderRadius = '3px'
-    p.style.fontStyle = 'italic'
-    p.style.fontWeight = '600'
+// $btn1.onclick = () => {
+//     p.style.color = 'black';
+//     p.style.width = '500px'
+//     p.style.fontStyle = '18px'
+//     p.style.margin = '50px auto'
+//     p.style.backgroundColor = 'rgb(170, 170, 119)'
+//     p.style.padding = '10px'
+//     p.style.border = 'solid 3px  rgb(130, 126, 182)'
+//     p.style.borderRadius = '3px'
+//     p.style.fontStyle = 'italic'
+//     p.style.fontWeight = '600'
+// }
+
+// $btn2.onclick = () => {
+//     p.style.color = 'rgb(59, 6, 59)';
+//     p.style.width = '650px'
+//     p.style.fontStyle = '15px'
+//     p.style.margin = '50px 20px  50px auto'
+//     p.style.backgroundColor = 'rgb(194, 71, 194)'
+//     p.style.padding = '10px'
+//     p.style.border = 'dashed 8px  rgb(72, 15, 148)'
+//     p.style.borderRadius = '3px'
+//     p.style.fontStyle = 'italic'
+//     p.style.fontWeight = '600'
+// }
+
+// $btn3.onclick = () => {
+//     p.style.color = 'rgb(59, 6, 59)';
+//     p.style.width = '650px'
+//     p.style.fontStyle = '15px'
+//     p.style.margin = '50px 20px  50px auto'
+//     p.style.backgroundColor = 'rgb(194, 71, 194)'
+//     p.style.padding = '10px'
+//     p.style.border = 'dashed 8px  rgb(72, 15, 148)'
+//     p.style.borderRadius = '3px'
+//     p.style.fontStyle = 'italic'
+//     p.style.fontWeight = '600'
+// }
+
+
+
+
+// let $block = document.querySelector('.block');
+
+// $block.addEventListener('click', (event) =>{
+//     console.log(event.target);
+//     if(event.target.tagName.toLowerCase() == 'p'){
+//         event.target.style.color = 'red';
+//     }
+//     if(event.target.tagName.toLowerCase() == 'li'){
+//         event.target.style.color = 'blue';       
+//         event.target.style.fontSize = '25px';       
+//     }
+//     if(event.target.tagName.toLowerCase() == 'div'){
+//         event.target.style.backgroundColor = 'yellow'      
+//     }
+//     if(event.target.tagName.toLowerCase() == 'ul'){
+//         event.target.style.backgroundColor = 'violet'      
+//     }
+    
+// })
+
+// let $btn = document.querySelector('.btn');
+
+
+// $btn.addEventListener('click', (event)=>{
+//     let el = event.target
+//     if(el.tagName == 'LI'){
+//         el.style.textDecoration = 'line-through';
+//     }
+//     let list = document.querySelectorAll('.btn li')
+//     if(el.dataset.list == 'all'){
+//         for(let i = 0; i < list.length; i++){
+//             list[i].style.display = 'block'
+//         }
+//     }
+//     if(el.dataset.list == 'active'){
+//         for(let i = 0; i < list.length; i++){
+//             if(list[i].style.textDecoration != 'line-through'){
+//                 list[i].style.display = 'block'
+//             }else{
+//                 list[i].style.display = 'none'
+//             }
+//         }
+//     }
+//     if(el.dataset.list == 'done'){
+//         for(let i = 0; i < list.length; i++){
+//             if(list[i].style.textDecoration != 'line-through'){
+//                 list[i].style.display = 'none'
+//             }else{
+//                 list[i].style.display = 'block'
+//             }
+//         }
+//     }
+// })
+
+
+
+
+
+
+let $img = document.querySelector('#current');
+let $left = document.querySelector('#left');
+let $right = document.querySelector('#right');
+let min_img = document.querySelectorAll('.smallImg img');
+
+let src_img = [];
+for (let i = 0; i < min_img.length; i++) {
+    src_img[i] = min_img[i].getAttribute('src')
 }
+let i = 0;
+$left.addEventListener('click',() =>{
+    i--;
+    if(i < 0) i = src_img.length - 1;
+    $img.src = src_img[i];
+} )
 
-$btn2.onclick = () => {
-    p.style.color = 'rgb(59, 6, 59)';
-    p.style.width = '650px'
-    p.style.fontStyle = '15px'
-    p.style.margin = '50px 20px  50px auto'
-    p.style.backgroundColor = 'rgb(194, 71, 194)'
-    p.style.padding = '10px'
-    p.style.border = 'dashed 8px  rgb(72, 15, 148)'
-    p.style.borderRadius = '3px'
-    p.style.fontStyle = 'italic'
-    p.style.fontWeight = '600'
+$right.addEventListener('click',() =>{
+   i++;
+   if(i == src_img.length) i = 0;
+   $img.src = src_img[i];
+    
+} )
+
+for (let j = 0; j < min_img.length; j++) {
+    min_img[j].addEventListener('click', () =>{
+        $img.src = src_img[j]
+        i = j;
+    } )
+    min_img[j].addEventListener('mouseenter', () =>{
+        min_img[j].style.transform = 'scale(1.2)';
+        min_img[j].style.opacity = '1';
+    } )
+    min_img[j].addEventListener('mouseleave', () =>{
+        min_img[j].style.transform = 'scale(1)';
+        min_img[j].style.opacity = '.7';
+    } )
 }
-
